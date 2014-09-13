@@ -36,6 +36,7 @@ my $git = Git::Wrapper->new('.');
 $git->config( 'user.name'  => 'dzp-git test' );
 $git->config( 'user.email' => 'dzp-git@test' );
 $git->config( 'user.signingkey' => '7D85ED44');
+$git->config( 'color.ui' => 'never');
 $git->add( qw{ dist.ini Changes } );
 $git->commit( { message => 'initial commit' } );
 
